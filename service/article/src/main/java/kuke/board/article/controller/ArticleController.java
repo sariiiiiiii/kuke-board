@@ -14,7 +14,7 @@ public class ArticleController {
     private final ArticleService articleService;
 
     @GetMapping("/v1/articles/{articleId}")
-    public ArticleResponse read(@PathVariable Long articleId) {
+    public ArticleResponse read(@PathVariable final Long articleId) {
         return articleService.read(articleId);
     }
 
